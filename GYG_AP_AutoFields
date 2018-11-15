@@ -139,7 +139,7 @@ CASE WHEN "kod" IN ('K36','K37') THEN 1 ELSE '' END
 #KVALITETSSTRÄCKOR KS
 
 #KS - typ
-CASE WHEN "kod" IN ('K14') THEN 2 ELSE '' END
+CASE WHEN "kod" IN ('K14','K43') THEN 0.3 ELSE '' END
  || 
 CASE WHEN "kod" IN ('K41') THEN 6 ELSE '' END
  || 
