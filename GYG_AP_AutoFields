@@ -1,0 +1,231 @@
+MIT License
+
+Copyright (c) SBK - Planavdelningen [2018] [GYF AP]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+----------------------------------------------------------------------------------
+
+#GYF AP UPPDATERAD 20181115
+
+#TYPER
+#1=Biologisk mångfald BM
+#2=Bullerreducering B 
+#3=Dagvatten- och skyfallshantering D
+#4=Klimatanpassning K
+#5=Polinering P
+#6=Rekreation och hälsa R
+
+#FAKTORER
+
+#PUNKTER
+
+#K5-Bevarat objekt som särskilt gynnar biologisk mångfald
+#K10-Nyskapat objekt som särskilt gynnar biologisk mångfald
+#K17-Positiva ljud från naturen / ljudmaskering (PUNKT)
+#K23-Uppsamling av regnvatten för bevattning
+#K28-Lövskugga från enstaka träd
+#K31-Pollinatörsobjekt
+#K36-Särskilt värdefulla träd, natur- och kulturobjekt
+#K37-Övriga träd och naturobjekt av värde för stadsbild m.m.
+
+#YTOR
+#K1-Bevarad viktig livsmiljö inom landskapssamband
+#K2-Bevarad viktig livsmiljö utanför landskapssamband
+#K3-Bevarad övrig natur inom landskapssamband
+#K4-Bevarad övrig natur utanför landskapssamband
+#K6-Nyanlagd viktig livsmiljö inom landskapssamband
+#K7-Nyanlagd viktig livsmiljö utanför landskapssamband
+#K8-Nyanlagd övrig natur inom landskapssamband
+#K9-Nyanlagd övrig natur utanför landskapssamband
+#K11-Bullervall
+#K12-Vegetationsklädd porös mark
+#K13-Trädbälte 15m<bred
+#K15-Grönska i växtsubstrat på konstruktion
+#K16-Grönska på konstruktion utan substrat
+#K17-Positiva ljud från naturen / ljudmaskering
+#K18-Vattenytor och vattenstråk som används för rening och fördröjning av dagvatten
+#K19-Genomsläpplig vegetationsklädd naturyta
+#K20-Vegetationsklädd tillfällig översvämningsyta
+#K21-Anlagd yta särskilt utformad för rening och fördröjning av dagvatten
+#K22-Dagvattenhanterade träd i hårdgjord yta
+#K24-Flerskiktad vegetation, minst tre vegetationsskikt
+#K25-Halvöppen vegetation, minst två vegetationsskikt
+#K26-Öppen vegetation, ett vegetationsskikt
+#K27-Lövskugga från konstruktion med grönska
+#K29-Pollinatörsnod
+#K30-Pollinatörsgynnande yta
+#K32-Artrik natur
+#K33-Skogskänsla
+#K34-Grönskande stadsmiljö
+#K35-Kulturhistorisk grön miljö
+#K38-Nyanlagd varierad artrik miljö
+#K39-Blomsterprakt
+#K40-Odling och/eller djurhållning
+#K42-Natur- och parkytor för aktiviteter (YTA)
+#K43-Rofylldhet
+
+#LINJER
+
+#K14-Trädrad bakom bullerskärm
+#K41-Längre sammanhängande gröna promenadstråk
+#K42-Natur- och parkytor för aktiviteter (LINJE)
+
+#Härefter följer lagerspecifika koder
+
+#Avgränsningsyta
+$area
+
+#KVALITETSPUNKTER KP
+
+#KP - typ
+CASE WHEN "kod" IN ('K5','K10') THEN 1 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K17') THEN 2 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K23') THEN 3 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K28') THEN 4 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K31') THEN 5 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K36','K37') THEN 6 ELSE '' END
+ || 
+ 
+#KP - faktor
+CASE WHEN "kod" IN ('K5','K36') THEN 3 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K10') THEN 1 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K17','K23') THEN 0.2 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K28','K37') THEN 0.5 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K31') THEN 2 ELSE '' END
+ || 
+ 
+#KP - poang
+"faktor"*"faktor"
+
+#KP - BM
+CASE WHEN "kod" IN ('K5','K10') THEN 1 ELSE '' END
+#KP - B
+CASE WHEN "kod" IN ('K17') THEN 1 ELSE '' END
+#KP - D
+CASE WHEN "kod" IN ('K23') THEN 1 ELSE '' END
+#KP - K
+CASE WHEN "kod" IN ('K28') THEN 1 ELSE '' END
+#KP - P
+CASE WHEN "kod" IN ('K31') THEN 1 ELSE '' END
+#KP - R
+CASE WHEN "kod" IN ('K36','K37') THEN 1 ELSE '' END
+
+#KVALITETSSTRÄCKOR KS
+
+#KS - typ
+CASE WHEN "kod" IN ('K14') THEN 2 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K41') THEN 6 ELSE '' END
+ || 
+ 
+#KS - faktor
+CASE WHEN "kod" = 'K14'THEN 0.3 ELSE '' END
+ || 
+CASE WHEN "kod" = 'K41'THEN 0.4 ELSE '' END
+ || 
+
+#KS - poang
+"length"*"faktor"
+
+#KS - length
+$length
+
+#KS - B
+CASE WHEN "kod" IN ('K14') THEN 1 ELSE '' END
+#KS - R
+CASE WHEN "kod" IN ('K41') THEN 1 ELSE '' END
+
+#KVALITETSYTOR KY
+
+#KY - typ
+CASE WHEN "kod" IN  ('K1','K2','K3','K4','K6','K7','K8','K9') THEN 1 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K11','K12','K13','K15','K16','K17') THEN 2 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K18','K19','K20','K21','K22') THEN 3 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K24','K25','K26','K27') THEN 4 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K29','K30') THEN 5 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K32','K33','K34','K35','K38','K39','K40','K42','K43') THEN 6 ELSE '' END
+ ||
+ 
+#KY - area
+$area
+
+#KY - faktor 
+CASE WHEN "kod" IN ('K1') THEN 2 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K2','K3','K30','K35') THEN 0.8 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K4','K24') THEN 0.6 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K6','K11','K18','K21','K33') THEN 0.7 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K7','K8','K25') THEN 0.4 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K9','K16','K17','K22','K26') THEN 0.2 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K12','K13','K19','K20','K27','K34','K38') THEN 0.5 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K15','K32') THEN 1 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K29') THEN 1.3 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K39','K40','K42','K43') THEN 0.3 ELSE '' END
+ ||
+
+#KY - poang 
+"area"*"faktor"
+
+#KY -BM
+CASE WHEN  "kod" IN ('K1','K2','K3','K4','K6','K7','K8','K9' THEN 1 ELSE '' END
+#KY - B 
+CASE WHEN  "kod" IN ('K11','K12','K13','K15','K16','K17') THEN 1 ELSE '' END
+#KY - D
+CASE WHEN  "kod" IN ('K18','K19','K20','K21','K22') THEN 1 ELSE '' END
+# KY - K
+CASE WHEN  "kod" IN ( 'K24','K25','K26','K27') THEN 1 ELSE '' END
+#KY - P 
+CASE WHEN  "kod" IN ('K29','K30') THEN 1 ELSE '' END
+#KY - R
+CASE WHEN  "kod" IN ('K32','K33','K34','K35','K38','K39','K40','K42','K43') THEN 1 ELSE '' END
+
+#YTOR
+
+#Ytor - typ 
+'Grön och blå yta'
+
+#Ytor - area 
+$area
+
+#Ytor - ponag
+"area"
+
