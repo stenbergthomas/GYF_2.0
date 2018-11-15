@@ -71,15 +71,20 @@ SOFTWARE.
 #K25-Halvöppen vegetation, minst två vegetationsskikt
 #K26-Öppen vegetation, ett vegetationsskikt
 #K27-Lövskugga från konstruktion med grönska
+#K28-Lövskugga från enstaka träd
 #K29-Pollinatörsnod
 #K30-Pollinatörsgynnande yta
+#K31-Pollinatörsobjekt
 #K32-Artrik natur
 #K33-Skogskänsla
 #K34-Grönskande stadsmiljö
 #K35-Kulturhistorisk grön miljö
+#K36-Särskilt värdefulla träd, natur- och kulturobjekt
+#K37-Övriga träd och naturobjekt av värde för stadsbild m.m.
 #K38-Nyanlagd varierad artrik miljö
 #K39-Blomsterprakt
 #K40-Odling och/eller djurhållning
+#K41-Längre sammanhängande gröna promenadstråk
 #K42-Natur- och parkytor för aktiviteter (YTA)
 #K43-Rofylldhet
 
