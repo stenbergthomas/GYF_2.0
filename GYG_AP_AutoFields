@@ -22,78 +22,99 @@ SOFTWARE.
 
 ----------------------------------------------------------------------------------
 
-#GYF AP UPPDATERAD 20181115
+#GYF KVM UPPDATERAD 20190130 (C) SBK - Planavdelningen
 
-#TYPER
-#1=Biologisk mångfald BM
-#2=Bullerreducering B 
-#3=Dagvatten- och skyfallshantering D
-#4=Klimatanpassning K
-#5=Polinering P
-#6=Rekreation och hälsa R
+#BALANSTYPER
+'1' #Biologisk mångfald B
+'2' #Sociala värden S
+'3' #Klimatanpassning K
+'4' #Ljudkvalitet L
+
+#HUVUDTYPER
+'H1' #Delfaktorer grönska
+'H2' #Tilläggsfaktorer grönska/biodiversitet
+'H3' #Tilläggsfaktorer grönska/rekreativa & sociala värden
+'H4' #Tilläggsfaktorer grönska/klimat - temperaturreglering
+'H5' #Tilläggsfaktorer grönska och ljudkvalitet
+'H6' #Delfaktorer vatten
+'H7' #Tilläggsfaktorer vatten/biodiversitet
+'H8' #Tilläggsfaktorer vatten/rekreativa & sociala värden
+'H9' #Tilläggsfaktorer vatten/klimat - temperaturreglering
+'H10' #Tilläggsfaktorer vatten och ljudkvalitet
 
 #FAKTORER
 
-#PUNKTER
+#KVALITETSPUNKTER
 
-#K5-Bevarat objekt som särskilt gynnar biologisk mångfald
-#K10-Nyskapat objekt som särskilt gynnar biologisk mångfald
-#K17-Positiva ljud från naturen / ljudmaskering (PUNKT)
-#K23-Uppsamling av regnvatten för bevattning
-#K28-Lövskugga från enstaka träd
-#K31-Pollinatörsobjekt
-#K36-Särskilt värdefulla träd, natur- och kulturobjekt
-#K37-Övriga träd och naturobjekt av värde för stadsbild m.m.
+'K18' #Karaktärsträd
+'K19' #Befintliga träd
+'K20' #Nya stora träd (stam >30 cm)
+'K21' #Nya mellanstora träd (stam 20-30 cm)
+'K22' #Nya små träd (stam 16-20 cm)
+'K23' #Bärande träd
+'K24' #Holkar, bikupor
+'K25' #Baggholkar
+'K26' #Faunadepåer
+'K27' #Biologiska gestaltningselement/habitatstärkande åtgärder
+'K36' #Träd, upplevelsevärden
+'K37' #Fruktträd
+'K39' #Habitatstärkande åtgärder, upplevelsevärden
+'K40' #Träd placerade så att de ger lövskugga
+'K59' #Fontäner o.dyl. S
+'K61' #Fontäner o.dyl. K
+'K62' #Fontäner o.dyl. L
 
 #KVALITETSYTOR
-#K1-Bevarad viktig livsmiljö inom landskapssamband
-#K2-Bevarad viktig livsmiljö utanför landskapssamband
-#K3-Bevarad övrig natur inom landskapssamband
-#K4-Bevarad övrig natur utanför landskapssamband
-#K6-Nyanlagd viktig livsmiljö inom landskapssamband
-#K7-Nyanlagd viktig livsmiljö utanför landskapssamband
-#K8-Nyanlagd övrig natur inom landskapssamband
-#K9-Nyanlagd övrig natur utanför landskapssamband
-#K11-Bullervall
-#K12-Vegetationsklädd porös mark
-#K13-Trädbälte 15m<bred
-#K15-Grönska i växtsubstrat på konstruktion
-#K16-Grönska på konstruktion utan substrat
-#K17-Positiva ljud från naturen / ljudmaskering
-#K18-Vattenytor och vattenstråk som används för rening och fördröjning av dagvatten
-#K19-Genomsläpplig vegetationsklädd naturyta
-#K20-Vegetationsklädd tillfällig översvämningsyta
-#K21-Anlagd yta särskilt utformad för rening och fördröjning av dagvatten
-#K22-Dagvattenhanterade träd i hårdgjord yta
-#K24-Flerskiktad vegetation, minst tre vegetationsskikt
-#K25-Halvöppen vegetation, minst två vegetationsskikt
-#K26-Öppen vegetation, ett vegetationsskikt
-#K27-Lövskugga från konstruktion med grönska
-#K29-Pollinatörsnod
-#K30-Pollinatörsgynnande yta
-#K32-Artrik natur
-#K33-Skogskänsla
-#K34-Grönskande stadsmiljö
-#K35-Kulturhistorisk grön miljö
-#K38-Nyanlagd varierad artrik miljö
-#K39-Blomsterprakt
-#K40-Odling och/eller djurhållning
-#K42-Natur- och parkytor för aktiviteter (YTA)
-#K43-Rofylldhet
+'K1' #Bevarad naturmark
+'K2' #Ej underbyggd markgrönska
+'K3' #Växtbädd >800 mm djup
+'K4' #Växtbädd 600-800 mm djup
+'K5' #Växtbädd 200-600 mm djup
+'K6' #Grönt tak med > 300 mm djup växtbädd
+'K7' #Grönt tak med 110-300 mm djup växtbädd
+'K8' #Grönt tak med 50 - 110 mm djup växtbädd
+'K9' #Grönska på väggar
+'K10' #Grönskande balkonger
+'K11' #Diversitet i fältskiktet
+'K12' #Naturligt arturval
+'K13' #Diversitet på gröna tunna sedumtak
+'K14' #Grönskande balkonger med häng- eller klätterväxter
+'K15' #Fjärilsrabatt
+'K16' #Buskar generellt
+'K17' #Bärande buskar
+'K28' #Ytor för social aktivitet
+'K29' #Odlingsytor
+'K30' #Tak, balkonger, terrasser och växthus för odling
+'K31' #Gemensamma takterasser
+'K32' #Synliga gröna tak
+'K33' #Blomsterprakt i fältskiktet
+'K34' #Buskar upplevelsevärden
+'K35' #Buskar med ätliga bär och frukter
+'K38' #Pergolor o.dyl.
+'K41' #Pergolor, lövgångar mm som ger lövskugga
+'K42' #Gröna tak eller flerskiktad markgrönska
+'K43' #Vegetationsklädd mark
+'K44' #Grönska på väggar, växtsubstrat på väggen
+'K45' #Grönska på väggar, klätterväxter
+'K46' #Gröna tak
+'K47' #Vattenytor i dammar, bäckar och diken
+'K48' #Öppna hårdgjorda ytor
+'K49' #Halvöppna hårdgjorda ytor
+'K50' #Hårdgjorda ytor med fogar
+'K51' #Täta ytor
+'K52' #Biologiskt tillgängliga permanenta vattenytor
+'K53' #Fuktstråk med tillfälligt kvardröjande vatten
+'K54' #Förd. av dagvatten från hårdgjorda ytor i ytvattensamlingar och fuktstråk
+'K55' #Avvattning av hårdgjorda ytor till omgivande grönska på mark, regnbäddar mm
+'K56' #Förd. av dagvatten från hårdgjorda ytor i  magasin
+'K57' #Vattenspeglar
+'K58' #Biologiskt tillgängliga vatten - upplevelsevärden
+'K60' #Vattensamlingar för torrperioder
+'K61' #Uppsamling i magasin av regnvatten för bevattning
 
-#LINJER
-
-#K14-Trädrad bakom bullerskärm
-#K41-Längre sammanhängande gröna promenadstråk
-#K42-Natur- och parkytor för aktiviteter (LINJE)
-
-#YTOR
-
-#Y1-Grönområden och gröna stråk 
-#Y2-Grönska i hårdgjorda miljöer
-#Y3-Grönska på konstruktioner
-#Y4-Vattenytor och vattenstråk
 #Härefter följer lagerspecifika koder
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Avgränsningsyta
 $area
@@ -101,137 +122,161 @@ $area
 #KVALITETSPUNKTER KP
 
 #KP - typ
-CASE WHEN "kod" IN ('K5','K10') THEN 1 ELSE '' END
- || 
-CASE WHEN "kod" IN ('K17') THEN 2 ELSE '' END
- || 
-CASE WHEN "kod" IN ('K23') THEN 3 ELSE '' END
- || 
-CASE WHEN "kod" IN ('K28') THEN 4 ELSE '' END
- || 
-CASE WHEN "kod" IN ('K31') THEN 5 ELSE '' END
- || 
-CASE WHEN "kod" IN ('K36','K37') THEN 6 ELSE '' END
- || 
- 
+CASE WHEN "kod" IN ('K18','K19','K20','K21','K22','K23','K24','K25','K26','K27') THEN 'H2' ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K36','K37','K39') THEN 'H3' ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K40') THEN 'H4' ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K59') THEN 'H8' ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K62') THEN 'H9' ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K63') THEN 'H10' ELSE '' END
+ ||
 #KP - faktor
-CASE WHEN "kod" IN ('K5','K36') THEN 3 ELSE '' END
+CASE WHEN "kod" IN ('K18','K19') THEN 3.0 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K10') THEN 1 ELSE '' END
+CASE WHEN "kod" IN ('K20') THEN 2.4 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K17','K23') THEN 0.2 ELSE '' END
+CASE WHEN "kod" IN ('K21') THEN 1.5 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K28','K37') THEN 0.5 ELSE '' END
+CASE WHEN "kod" IN ('K22') THEN 1.0 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K31') THEN 2 ELSE '' END
+CASE WHEN "kod" IN ('K23','K36','K40') THEN 0.4 ELSE '' END
  || 
- 
+CASE WHEN "kod" IN ('K24') THEN 0.5 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K25','K26','K27') THEN 2.0 ELSE '' END
+ || 
+CASE WHEN "kod" IN ('K39','K37') THEN 0.2 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K59','K62','K63') THEN 0.3 ELSE '' END
+ || 
 #KP - poang
-"faktor"*"faktor"
+CASE WHEN "kod" IN ('K24','K25','K26','K27','K39') THEN "faktor" * 5 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K18','K20','K21','K22','K23','K36','K37','K40','K59','K62','K63') THEN "faktor" * 25 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K19') THEN "faktor" * 50 ELSE '' END
+ ||
 
-#KP - BM
-CASE WHEN "kod" IN ('K5','K10') THEN 1 ELSE '' END
 #KP - B
-CASE WHEN "kod" IN ('K17') THEN 1 ELSE '' END
-#KP - D
-CASE WHEN "kod" IN ('K23') THEN 1 ELSE '' END
+CASE WHEN "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K11','K12','K13','K14','K15','K16','K17','K18','K19','K20','K21','K22','K23','K24','K25','K26','K27','K47','K48','K52','K53','K54','K55','K56') THEN 1 ELSE '' END
+#KP - S
+CASE WHEN "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K28','K29','K30','K31','K32','K33','K34','K35','K36','K37','K38','K39','K47','K48','K49','K50','K57','K58','K59') THEN 1 ELSE '' END
 #KP - K
-CASE WHEN "kod" IN ('K28') THEN 1 ELSE '' END
-#KP - P
-CASE WHEN "kod" IN ('K31') THEN 1 ELSE '' END
-#KP - R
-CASE WHEN "kod" IN ('K36','K37') THEN 1 ELSE '' END
-
-#KVALITETSSTRÄCKOR KS
-
-#KS - typ
-CASE WHEN "kod" IN ('K14') THEN 2 ELSE '' END
- || 
-CASE WHEN "kod" IN ('K41','43') THEN 6 ELSE '' END
- || 
- 
-#KS - faktor
-CASE WHEN "kod" IN ('K14','K43') THEN 0.3 ELSE '' END
- || 
-CASE WHEN "kod" = 'K41'THEN 0.4 ELSE '' END
- || 
-
-#KS - poang
-"length"*"faktor"
-
-#KS - length
-$length
-
-#KS - B
-CASE WHEN "kod" IN ('K14') THEN 1 ELSE '' END
-#KS - R
-CASE WHEN "kod" IN ('K41') THEN 1 ELSE '' END
+CASE WHEN "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K40','K41','K42','K47','K48','K49','K50','K60','K61','K62') THEN 1 ELSE '' END
+#KP - L
+CASE WHEN "kod" IN ('K43','K44','K45','K46','K63') THEN 1 ELSE '' END
 
 #KVALITETSYTOR KY
 
 #KY - typ
-CASE WHEN "kod" IN  ('K1','K2','K3','K4','K6','K7','K8','K9') THEN 1 ELSE '' END
+CASE WHEN "kod" IN  ('K1','K2','K3','K4','K6','K7','K8','K9','K10') THEN 'H1' ELSE '' END
  || 
-CASE WHEN "kod" IN ('K11','K12','K13','K15','K16','K17') THEN 2 ELSE '' END
+CASE WHEN "kod" IN ('K11','K12','K13','K14','K15','K16','K17') THEN 'H2' ELSE '' END
  || 
-CASE WHEN "kod" IN ('K18','K19','K20','K21','K22') THEN 3 ELSE '' END
+CASE WHEN "kod" IN ('K28','K29','K30','K31','K32','K33','K34','K35','K38') THEN 'H3' ELSE '' END
  || 
-CASE WHEN "kod" IN ('K24','K25','K26','K27') THEN 4 ELSE '' END
+CASE WHEN "kod" IN ('K41','K42') THEN 'H4' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K29','K30') THEN 5 ELSE '' END
+CASE WHEN "kod" IN ('K43','K44','K45','K46') THEN 'H5' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K32','K33','K34','K35','K38','K39','K40','K42','K43') THEN 6 ELSE '' END
+CASE WHEN "kod" IN ('K47','K48','K49','K50','K51') THEN 'H6' ELSE '' END
  ||
- 
+CASE WHEN "kod" IN ('K52','K53','K54','K55','K56') THEN 'H7' ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K57','K58') THEN 'H8' ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K60','K61') THEN 'H9' ELSE '' END
+ ||
 #KY - area
 $area
 
 #KY - faktor 
-CASE WHEN "kod" IN ('K1') THEN 2 ELSE '' END
+CASE WHEN "kod" IN ('K1','K2') THEN 1.5 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K2','K3','K30','K35') THEN 0.8 ELSE '' END
+CASE WHEN "kod" IN ('K3') THEN 1.4 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K4','K24') THEN 0.6 ELSE '' END
+CASE WHEN "kod" IN ('K4','K6','K10','K14','K38','K44','K48') THEN 0.3 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K6','K11','K18','K21','K33') THEN 0.7 ELSE '' END
+CASE WHEN "kod" IN ('K5','K7','K13','K34','K43','K45','K56') THEN 0.1 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K7','K8','K25') THEN 0.4 ELSE '' END
+CASE WHEN "kod" IN ('K8','K11','K32','K42','K46','K50','K61') THEN 0.05 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K9','K16','K17','K22','K26') THEN 0.2 ELSE '' END
+CASE WHEN "kod" IN ('K9','K17') THEN 0.4 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K12','K13','K19','K20','K27','K34','K38') THEN 0.5 ELSE '' END
+CASE WHEN "kod" IN ('K16','K31','K33','K35','K49','K54','K55') THEN 0.2 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K15','K32') THEN 1 ELSE '' END
+CASE WHEN "kod" IN ('K53') THEN 2.0 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K29') THEN 1.3 ELSE '' END
+CASE WHEN "kod" IN ('K28') THEN 1.2 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K39','K40','K42','K43') THEN 0.3 ELSE '' END
+CASE WHEN "kod" IN ('K52') THEN 4.0 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K15','K47','K58') THEN 1.0 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K12','K29','K30','K41','K57','K60') THEN 0.5 ELSE '' END
+ ||
+CASE WHEN "kod" IN ('K51') THEN 0.0 ELSE '' END
  ||
 
 #KY - poang 
 "area"*"faktor"
 
-#KY -BM
-CASE WHEN  "kod" IN ('K1','K2','K3','K4','K6','K7','K8','K9') THEN 1 ELSE '' END
 #KY - B 
-CASE WHEN  "kod" IN ('K11','K12','K13','K15','K16','K17') THEN 1 ELSE '' END
-#KY - D
-CASE WHEN  "kod" IN ('K18','K19','K20','K21','K22') THEN 1 ELSE '' END
+CASE WHEN  "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K11','K12','K13','K14','K15','K16','K17','K47','K48','K52','K53','K54','K55','K56') THEN 1 ELSE '' END
+#KY - S
+CASE WHEN  "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K28','K29','K30','K31','K32','K33','K34','K35','K38','K47','K48','K49','K50','K57','K58','K59') THEN 1 ELSE '' END
 # KY - K
-CASE WHEN  "kod" IN ( 'K24','K25','K26','K27') THEN 1 ELSE '' END
-#KY - P 
-CASE WHEN  "kod" IN ('K29','K30') THEN 1 ELSE '' END
-#KY - R
-CASE WHEN  "kod" IN ('K32','K33','K34','K35','K38','K39','K40','K42','K43') THEN 1 ELSE '' END
+CASE WHEN  "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K41','K42','K47','K48','K49','K50','K60','K61') THEN 1 ELSE '' END
+#KY - L
+CASE WHEN  "kod" IN ('K43','K44','K45','K46') THEN 1 ELSE '' END
 
-#YTOR
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Ytor - typ 
-'Grön och blå yta'
+#Layoutkoder för atlas i Qgis
 
-#Ytor - area 
-$area
+#Summering av GYF
+round((aggregate('KY','sum', "poang"  ,intersects(@atlas_geometry, $geometry))  + aggregate('KP','sum', "poang"  ,intersects(@atlas_geometry, $geometry)) )  /  "area"  ,2)
 
-#Ytor - ponag
-"area"
+#Staplar för balansdiagram i layout
 
+#KY staplel B
+(aggregate('KY','count', "B", intersects(@atlas_geometry, $geometry) ) ) /  ( aggregate('KY', 'sum', "B", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "S", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "K", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "L" , intersects(@atlas_geometry, $geometry))  ) * 100
+#KY stapel S
+(aggregate('KY','count', "S", intersects(@atlas_geometry, $geometry) ) ) /  ( aggregate('KY', 'sum', "B", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "S", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "K", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "L" , intersects(@atlas_geometry, $geometry))  ) * 100
+#KY stapel K
+(aggregate('KY','count', "K", intersects(@atlas_geometry, $geometry) ) ) /  ( aggregate('KY', 'sum', "B", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "S", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "K", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "L" , intersects(@atlas_geometry, $geometry))  ) * 100
+#KY stapel L
+(aggregate('KY','count', "L", intersects(@atlas_geometry, $geometry) ) ) /  ( aggregate('KY', 'sum', "B", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "S", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "K", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "L" , intersects(@atlas_geometry, $geometry))  ) * 100
+
+#KP stapel B
+(aggregate('KP','count', "B", intersects(@atlas_geometry, $geometry) ) ) /  ( aggregate('KP', 'sum', "B", intersects(@atlas_geometry, $geometry))  + aggregate('KP', 'sum', "S", intersects(@atlas_geometry, $geometry))  + aggregate('KP', 'sum', "K", intersects(@atlas_geometry, $geometry))  + aggregate('KP', 'sum', "L" , intersects(@atlas_geometry, $geometry))  ) * 100
+#KP stapel S
+(aggregate('KP','count', "S", intersects(@atlas_geometry, $geometry) ) ) /  ( aggregate('KY', 'sum', "B", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "S", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "K", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "L" , intersects(@atlas_geometry, $geometry))  ) * 100
+#KP stapel K
+(aggregate('KP','count', "K", intersects(@atlas_geometry, $geometry) ) ) /  ( aggregate('KY', 'sum', "B", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "S", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "K", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "L" , intersects(@atlas_geometry, $geometry))  ) * 100
+#KP stapel L
+(aggregate('KP','count', "L", intersects(@atlas_geometry, $geometry) ) ) /  ( aggregate('KY', 'sum', "B", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "S", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "K", intersects(@atlas_geometry, $geometry))  + aggregate('KY', 'sum', "L" , intersects(@atlas_geometry, $geometry))  ) * 100
+
+#KY attributsummering balansräkning i layout
+
+#KY B 
+(aggregate('KY','count', "B", intersects(@atlas_geometry, $geometry) ) )
+#KY S
+(aggregate('KY','count', "S", intersects(@atlas_geometry, $geometry) ) )
+#KY K
+(aggregate('KY','count', "K", intersects(@atlas_geometry, $geometry) ) )
+#KY L
+(aggregate('KY','count', "L", intersects(@atlas_geometry, $geometry) ) )
+
+#KP B
+( aggregate('KP', 'sum', "B", intersects(@atlas_geometry, $geometry)))
+#KP S
+( aggregate('KP', 'sum', "S", intersects(@atlas_geometry, $geometry)))
+#KP K
+( aggregate('KP', 'sum', "K", intersects(@atlas_geometry, $geometry)))
+#KP L
+( aggregate('KP', 'sum', "L", intersects(@atlas_geometry, $geometry)))
