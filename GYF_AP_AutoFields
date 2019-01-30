@@ -30,91 +30,88 @@ SOFTWARE.
 '3' #Klimatanpassning K
 '4' #Ljudkvalitet L
 
-#HUVUDTYPER
-'H1' #Delfaktorer grönska
+#DELFAKTORER
+
+'H1' #Delfaktorer grönska RÄKNA I FAKTOR MEN EJ I BALANSEN
+	'D1' #Bevarad naturmark
+	'D2' #Ej underbyggd markgrönska
+	'D3' #Växtbädd >800 mm djup
+	'D4' #Växtbädd 600-800 mm djup
+	'D5' #Växtbädd 200-600 mm djup
+	'D6' #Grönt tak med > 300 mm djup växtbädd
+	'D7' #Grönt tak med 110-300 mm djup växtbädd
+	'D8' #Grönt tak med 50 - 110 mm djup växtbädd
+	'D9' #Grönska på väggar
+	'D10' #Grönskande balkonger
 'H2' #Tilläggsfaktorer grönska/biodiversitet
 'H3' #Tilläggsfaktorer grönska/rekreativa & sociala värden
 'H4' #Tilläggsfaktorer grönska/klimat - temperaturreglering
 'H5' #Tilläggsfaktorer grönska och ljudkvalitet
-'H6' #Delfaktorer vatten
+'H6' #Delfaktorer vatten RÄKNA I FAKTOR MEN EJ I BALANSEN
+	'D11' #Vattenytor i dammar, bäckar och diken 
+	'D12' #Öppna hårdgjorda ytor
+	'D13' #Halvöppna hårdgjorda ytor
+	'D14' #Hårdgjorda ytor med fogar
+	'D15' #Täta ytor
 'H7' #Tilläggsfaktorer vatten/biodiversitet
 'H8' #Tilläggsfaktorer vatten/rekreativa & sociala värden
 'H9' #Tilläggsfaktorer vatten/klimat - temperaturreglering
 'H10' #Tilläggsfaktorer vatten och ljudkvalitet
 
-#FAKTORER
+#TILLÄGGSFAKTORER RÄKNAS I FAKTOR OCH BALANS
 
-#KVALITETSPUNKTER
-
-'K18' #Karaktärsträd
-'K19' #Befintliga träd
-'K20' #Nya stora träd (stam >30 cm)
-'K21' #Nya mellanstora träd (stam 20-30 cm)
-'K22' #Nya små träd (stam 16-20 cm)
-'K23' #Bärande träd
-'K24' #Holkar, bikupor
-'K25' #Baggholkar
-'K26' #Faunadepåer
-'K27' #Biologiska gestaltningselement/habitatstärkande åtgärder
-'K36' #Träd, upplevelsevärden
-'K37' #Fruktträd
-'K39' #Habitatstärkande åtgärder, upplevelsevärden
-'K40' #Träd placerade så att de ger lövskugga
-'K59' #Fontäner o.dyl. S
-'K61' #Fontäner o.dyl. K
-'K62' #Fontäner o.dyl. L
-
-#KVALITETSYTOR
-'K1' #Bevarad naturmark
-'K2' #Ej underbyggd markgrönska
-'K3' #Växtbädd >800 mm djup
-'K4' #Växtbädd 600-800 mm djup
-'K5' #Växtbädd 200-600 mm djup
-'K6' #Grönt tak med > 300 mm djup växtbädd
-'K7' #Grönt tak med 110-300 mm djup växtbädd
-'K8' #Grönt tak med 50 - 110 mm djup växtbädd
-'K9' #Grönska på väggar
-'K10' #Grönskande balkonger
-'K11' #Diversitet i fältskiktet
-'K12' #Naturligt arturval
-'K13' #Diversitet på gröna tunna sedumtak
-'K14' #Grönskande balkonger med häng- eller klätterväxter
-'K15' #Fjärilsrabatt
-'K16' #Buskar generellt
-'K17' #Bärande buskar
-'K28' #Ytor för social aktivitet
-'K29' #Odlingsytor
-'K30' #Tak, balkonger, terrasser och växthus för odling
-'K31' #Gemensamma takterasser
-'K32' #Synliga gröna tak
-'K33' #Blomsterprakt i fältskiktet
-'K34' #Buskar upplevelsevärden
-'K35' #Buskar med ätliga bär och frukter
-'K38' #Pergolor o.dyl.
-'K41' #Pergolor, lövgångar mm som ger lövskugga
-'K42' #Gröna tak eller flerskiktad markgrönska
-'K43' #Vegetationsklädd mark
-'K44' #Grönska på väggar, växtsubstrat på väggen
-'K45' #Grönska på väggar, klätterväxter
-'K46' #Gröna tak
-'K47' #Vattenytor i dammar, bäckar och diken
-'K48' #Öppna hårdgjorda ytor
-'K49' #Halvöppna hårdgjorda ytor
-'K50' #Hårdgjorda ytor med fogar
-'K51' #Täta ytor
-'K52' #Biologiskt tillgängliga permanenta vattenytor
-'K53' #Fuktstråk med tillfälligt kvardröjande vatten
-'K54' #Förd. av dagvatten från hårdgjorda ytor i ytvattensamlingar och fuktstråk
-'K55' #Avvattning av hårdgjorda ytor till omgivande grönska på mark, regnbäddar mm
-'K56' #Förd. av dagvatten från hårdgjorda ytor i  magasin
-'K57' #Vattenspeglar
-'K58' #Biologiskt tillgängliga vatten - upplevelsevärden
-'K60' #Vattensamlingar för torrperioder
-'K61' #Uppsamling i magasin av regnvatten för bevattning
-
-#Härefter följer lagerspecifika koder
+'T1' #Diversitet i fältskiktet
+'T2' #Naturligt arturval
+'T3' #Diversitet på gröna tunna sedumtak
+'T4' #Grönskande balkonger med häng- eller klätterväxter
+'T5' #Fjärilsrabatt
+'T6' #Buskar generellt
+'T7' #Bärande buskar
+'T8' #Karaktärsträd
+'T9' #Befintliga träd
+'T10' #Nya stora träd (stam >30 cm)
+'T11' #Nya mellanstora träd (stam 20-30 cm)
+'T12' #Nya små träd (stam 16-20 cm)
+'T13' #Bärande träd
+'T14' #Holkar, bikupor
+'T15' #Baggholkar
+'T16' #Faunadepåer
+'T17' #Biologiska gestaltningselement/habitatstärkande åtgärder
+'T18' #Ytor för social aktivitet
+'T19' #Odlingsytor
+'T20' #Tak, balkonger, terrasser och växthus för odling
+'T21' #Gemensamma takterasser
+'T22' #Synliga gröna tak
+'T23' #Blomsterprakt i fältskiktet
+'T24' #Buskar upplevelsevärden
+'T25' #Buskar med ätliga bär och frukter
+'T26' #Träd, upplevelsevärden
+'T27' #Fruktträd
+'T29' #Habitatstärkande åtgärder, upplevelsevärden
+'T30' #Träd placerade så att de ger lövskugga
+'T28' #Pergolor o.dyl.
+'T31' #Pergolor, lövgångar mm som ger lövskugga
+'T32' #Gröna tak eller flerskiktad markgrönska
+'T33' #Vegetationsklädd mark
+'T34' #Grönska på väggar, växtsubstrat på väggen
+'T35' #Grönska på väggar, klätterväxter
+'T36' #Gröna tak
+'T37' #Biologiskt tillgängliga permanenta vattenytor
+'T38' #Fuktstråk med tillfälligt kvardröjande vatten
+'T39' #Förd. av dagvatten från hårdgjorda ytor i ytvattensamlingar och fuktstråk
+'T40' #Avvattning av hårdgjorda ytor till omgivande grönska på mark, regnbäddar mm
+'T41' #Förd. av dagvatten från hårdgjorda ytor i  magasin
+'T42' #Vattenspeglar
+'T43' #Biologiskt tillgängliga vatten - upplevelsevärden
+'T44' #Fontäner o.dyl. S
+'T45' #Vattensamlingar för torrperioder
+'T46' #Uppsamling i magasin av regnvatten för bevattning
+'T47' #Fontäner o.dyl. K
+'T50' #Fontäner o.dyl. L
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Härefter följer lagerspecifika koder
 
 #Avgränsningsyta
 $area
@@ -122,117 +119,117 @@ $area
 #KVALITETSPUNKTER KP
 
 #KP - typ
-CASE WHEN "kod" IN ('K18','K19','K20','K21','K22','K23','K24','K25','K26','K27') THEN 'H2' ELSE '' END
+CASE WHEN "kod" IN ('T8','T9','T10','T11','T12','T13','T14','T15','T16','T17') THEN 'H2' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K36','K37','K39') THEN 'H3' ELSE '' END
+CASE WHEN "kod" IN ('T26','T27','T29') THEN 'H3' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K40') THEN 'H4' ELSE '' END
+CASE WHEN "kod" IN ('T30') THEN 'H4' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K59') THEN 'H8' ELSE '' END
+CASE WHEN "kod" IN ('T44') THEN 'H8' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K62') THEN 'H9' ELSE '' END
+CASE WHEN "kod" IN ('T47') THEN 'H9' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K63') THEN 'H10' ELSE '' END
+CASE WHEN "kod" IN ('T50') THEN 'H10' ELSE '' END
  ||
 #KP - faktor
-CASE WHEN "kod" IN ('K18','K19') THEN 3.0 ELSE '' END
+CASE WHEN "kod" IN ('T8','T9') THEN 3.0 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K20') THEN 2.4 ELSE '' END
+CASE WHEN "kod" IN ('T10') THEN 2.4 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K21') THEN 1.5 ELSE '' END
+CASE WHEN "kod" IN ('T11') THEN 1.5 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K22') THEN 1.0 ELSE '' END
+CASE WHEN "kod" IN ('T12') THEN 1.0 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K23','K36','K40') THEN 0.4 ELSE '' END
+CASE WHEN "kod" IN ('T13','T26','T30') THEN 0.4 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K24') THEN 0.5 ELSE '' END
+CASE WHEN "kod" IN ('T14') THEN 0.5 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K25','K26','K27') THEN 2.0 ELSE '' END
+CASE WHEN "kod" IN ('T15','T16','T17') THEN 2.0 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K39','K37') THEN 0.2 ELSE '' END
+CASE WHEN "kod" IN ('T29','T27') THEN 0.2 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K59','K62','K63') THEN 0.3 ELSE '' END
+CASE WHEN "kod" IN ('T44','T47','T50') THEN 0.3 ELSE '' END
  || 
 #KP - poang
-CASE WHEN "kod" IN ('K24','K25','K26','K27','K39') THEN "faktor" * 5 ELSE '' END
+CASE WHEN "kod" IN ('T14','T15','T16','T17','T29') THEN "faktor" * 5 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K18','K20','K21','K22','K23','K36','K37','K40','K59','K62','K63') THEN "faktor" * 25 ELSE '' END
+CASE WHEN "kod" IN ('T8','T10','T11','T12','T13','T26','T27','T30','T44','T50','T47') THEN "faktor" * 25 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K19') THEN "faktor" * 50 ELSE '' END
+CASE WHEN "kod" IN ('T9') THEN "faktor" * 50 ELSE '' END
  ||
 
 #KP - B
-CASE WHEN "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K11','K12','K13','K14','K15','K16','K17','K18','K19','K20','K21','K22','K23','K24','K25','K26','K27','K47','K48','K52','K53','K54','K55','K56') THEN 1 ELSE '' END
+CASE WHEN "kod" IN ('T6','T7','T8','T9','T10','T11','T12','T13','T14','T15','T16','T17','T37','T38','T39','T40','T41') THEN 1 ELSE '' END
 #KP - S
-CASE WHEN "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K28','K29','K30','K31','K32','K33','K34','K35','K36','K37','K38','K39','K47','K48','K49','K50','K57','K58','K59') THEN 1 ELSE '' END
+CASE WHEN "kod" IN ('T18','T19','T20','T21','T22','T23','T24','T25','T26','T27','T28','T29','T42','T43','T44') THEN 1 ELSE '' END
 #KP - K
-CASE WHEN "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K40','K41','K42','K47','K48','K49','K50','K60','K61','K62') THEN 1 ELSE '' END
+CASE WHEN "kod" IN ('T30','T31','T32','T45','T47','T50') THEN 1 ELSE '' END
 #KP - L
-CASE WHEN "kod" IN ('K43','K44','K45','K46','K63') THEN 1 ELSE '' END
+CASE WHEN "kod" IN ('T33','T34','T35','T36','T50') THEN 1 ELSE '' END
 
 #KVALITETSYTOR KY
 
 #KY - typ
-CASE WHEN "kod" IN  ('K1','K2','K3','K4','K6','K7','K8','K9','K10') THEN 'H1' ELSE '' END
+CASE WHEN "kod" IN  ('D1','D2','D3','D4','D5','D6','D7','D8','D9','D10') THEN 'H1' ELSE '' END
  || 
-CASE WHEN "kod" IN ('K11','K12','K13','K14','K15','K16','K17') THEN 'H2' ELSE '' END
+CASE WHEN "kod" IN ('D11','D12','D13','D14','D15','T6','T7') THEN 'H2' ELSE '' END
  || 
-CASE WHEN "kod" IN ('K28','K29','K30','K31','K32','K33','K34','K35','K38') THEN 'H3' ELSE '' END
+CASE WHEN "kod" IN ('T18','T19','T20','T21','T22','T23','T24','T25','T28') THEN 'H3' ELSE '' END
  || 
-CASE WHEN "kod" IN ('K41','K42') THEN 'H4' ELSE '' END
+CASE WHEN "kod" IN ('T31','T32') THEN 'H4' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K43','K44','K45','K46') THEN 'H5' ELSE '' END
+CASE WHEN "kod" IN ('T33','T34','T35','T36') THEN 'H5' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K47','K48','K49','K50','K51') THEN 'H6' ELSE '' END
+CASE WHEN "kod" IN ('D11','D12','D13','D14','D15') THEN 'H6' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K52','K53','K54','K55','K56') THEN 'H7' ELSE '' END
+CASE WHEN "kod" IN ('T37','T38','T39','T40','T41') THEN 'H7' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K57','K58') THEN 'H8' ELSE '' END
+CASE WHEN "kod" IN ('T42','T43') THEN 'H8' ELSE '' END
  ||
-CASE WHEN "kod" IN ('K60','K61') THEN 'H9' ELSE '' END
+CASE WHEN "kod" IN ('T45','T47') THEN 'H9' ELSE '' END
  ||
 #KY - area
 $area
 
 #KY - faktor 
-CASE WHEN "kod" IN ('K1','K2') THEN 1.5 ELSE '' END
+CASE WHEN "kod" IN ('D1','D2') THEN 1.5 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K3') THEN 1.4 ELSE '' END
+CASE WHEN "kod" IN ('D3') THEN 1.4 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K4','K6','K10','K14','K38','K44','K48') THEN 0.3 ELSE '' END
+CASE WHEN "kod" IN ('D4','D6','D10','D14','T28','T34','D12') THEN 0.3 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K5','K7','K13','K34','K43','K45','K56') THEN 0.1 ELSE '' END
+CASE WHEN "kod" IN ('D5','D7','D13','T24','T33','T35','T41') THEN 0.1 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K8','K11','K32','K42','K46','K50','K61') THEN 0.05 ELSE '' END
+CASE WHEN "kod" IN ('D8','T1','T22','T32','T36','K50','T47') THEN 0.05 ELSE '' END
  || 
-CASE WHEN "kod" IN ('K9','K17') THEN 0.4 ELSE '' END
+CASE WHEN "kod" IN ('D9','T7') THEN 0.4 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K16','K31','K33','K35','K49','K54','K55') THEN 0.2 ELSE '' END
+CASE WHEN "kod" IN ('T6','T21','T23','T25','D13','T39','T40') THEN 0.2 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K53') THEN 2.0 ELSE '' END
+CASE WHEN "kod" IN ('T38') THEN 2.0 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K28') THEN 1.2 ELSE '' END
+CASE WHEN "kod" IN ('T18') THEN 1.2 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K52') THEN 4.0 ELSE '' END
+CASE WHEN "kod" IN ('T37') THEN 4.0 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K15','K47','K58') THEN 1.0 ELSE '' END
+CASE WHEN "kod" IN ('D15','D11','T43') THEN 1.0 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K12','K29','K30','K41','K57','K60') THEN 0.5 ELSE '' END
+CASE WHEN "kod" IN ('D12','T19','T20','T31','T42','T45') THEN 0.5 ELSE '' END
  ||
-CASE WHEN "kod" IN ('K51') THEN 0.0 ELSE '' END
+CASE WHEN "kod" IN ('D15') THEN 0.0 ELSE '' END
  ||
 
 #KY - poang 
 "area"*"faktor"
 
 #KY - B 
-CASE WHEN  "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K11','K12','K13','K14','K15','K16','K17','K47','K48','K52','K53','K54','K55','K56') THEN 1 ELSE '' END
+CASE WHEN  "kod" IN ('T6','T7','D11','D12','T37','T38','T39','T40','T41') THEN 1 ELSE '' END
 #KY - S
-CASE WHEN  "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K28','K29','K30','K31','K32','K33','K34','K35','K38','K47','K48','K49','K50','K57','K58','K59') THEN 1 ELSE '' END
+CASE WHEN  "kod" IN ('T18','T19','T20','T21','T22','T23','T24','T25','T28','D11','D12','D13','D14','T42','T43','T44') THEN 1 ELSE '' END
 # KY - K
-CASE WHEN  "kod" IN ('K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K41','K42','K47','K48','K49','K50','K60','K61') THEN 1 ELSE '' END
+CASE WHEN  "kod" IN ('T31','T32','K11','D12','D13','D14','T45','T47') THEN 1 ELSE '' END
 #KY - L
-CASE WHEN  "kod" IN ('K43','K44','K45','K46') THEN 1 ELSE '' END
+CASE WHEN  "kod" IN ('T33','T34','T35','T36') THEN 1 ELSE '' END
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -280,4 +277,3 @@ round((aggregate('KY','sum', "poang"  ,intersects(@atlas_geometry, $geometry))  
 ( aggregate('KP', 'sum', "K", intersects(@atlas_geometry, $geometry)))
 #KP L
 ( aggregate('KP', 'sum', "L", intersects(@atlas_geometry, $geometry)))
-
