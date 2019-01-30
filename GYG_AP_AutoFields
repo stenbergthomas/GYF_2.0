@@ -280,3 +280,4 @@ round((aggregate('KY','sum', "poang"  ,intersects(@atlas_geometry, $geometry))  
 ( aggregate('KP', 'sum', "K", intersects(@atlas_geometry, $geometry)))
 #KP L
 ( aggregate('KP', 'sum', "L", intersects(@atlas_geometry, $geometry)))
+
